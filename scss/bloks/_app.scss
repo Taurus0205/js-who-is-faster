@@ -7,6 +7,7 @@
 .form {
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -29,18 +30,50 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .item {
+  position: relative;
+  z-index: 1;
   vertical-align: middle;
   width: 130px;
   height: 130px;
   border: 1px solid #333;
   border-radius: 5px;
-  margin: 0 15px;
+  margin: 15px;
   padding: 15px;
+  padding-top: 80px;
+
+  &:before {
+    position: absolute;
+    top: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    content: "";
+  }
 }
+.foot::before {
+  background-image: url(../images/man.svg);
+}
+
+.bike::before {
+  background-image: url(../images/bike.svg);
+}
+
+.car::before {
+  background-image: url(../images/car.svg);
+}
+
+.plane::before {
+  background-image: url(../images/plane.svg);
+}
+
 .paragraph {
   font-weight: bold;
-}
-.span {
 }
