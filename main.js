@@ -1,6 +1,4 @@
-const elHumbergerBtn = document.querySelector(".hamburger-btn");
-const elHeader = document.querySelector(".header");
-
-elHumbergerBtn.addEventListener("click", function () {
-  elHeader.classList.toggle("header--adoptive");
-});
+var foot = 3.6;
+var bike = 20.1;
+var car = 70;
+var plane = 800;

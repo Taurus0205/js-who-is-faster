@@ -1,0 +1,46 @@
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+.heading {
+}
+.form {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.input {
+  padding: 5px;
+  width: 100%;
+  max-width: 100px;
+  margin-right: 10px;
+}
+.btn {
+  border: none;
+  background-color: rgb(104, 117, 233);
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  vertical-align: middle;
+  width: 130px;
+  height: 130px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 0 15px;
+  padding: 15px;
+}
+.paragraph {
+  font-weight: bold;
+}
+.span {
+}
